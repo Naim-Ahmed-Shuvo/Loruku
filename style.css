@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 10px 0px;
+}
+p {
+  margin: 10px 0px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Nav */
+.nav_bar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.nav_bar .flex {
+  justify-content: space-between;
+}
+
+.nav_bar ul {
+  display: flex;
+}
+.nav_bar ul a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+.nav_bar ul a:hover {
+  border-bottom: 1px solid #fff;
+}
+/* Nav./ */
+
+/* showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+.showcase::after,
+.showcase::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  background-color: #fff;
+  height: 100px;
+  right: 0;
+  left: 0;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  padding: 20px 0px;
+}
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+.showcase_form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  animation: slideInFromRight 1s ease-in;
+}
+.showcase_form .form_control {
+  margin: 30px 0;
+}
+.showcase_form input[type="text"],
+.showcase_form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+.showcase_form input:focus {
+  outline: none;
+}
+.showcase_text{
+  animation: slideInFromLeft 1s ease-in;
+}
+.hidden{
+  visibility: hidden;
+  height: 0px;
+  margin: 0px;
+  padding: 0px !important;
+}
+.showcase_form>input[type="hidden"]{
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+/* showcase./ */
+
+/* stats */
+.stats {
+  padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
+}
+.stats_header {
+  max-width: 500px;
+  margin: auto !important;
+}
+.stats .grid h3{
+  font-size: 35px;
+}
+.stats .grid p{
+  font-size: 20px;
+  font-weight: bold;
+}
+/* stats./ */
+
+/* cli */
+.cli .grid{
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.cli .grid > *:first-child{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+/* cli./ */
+
+/* cloud */
+.cloud .grid{
+  grid-template-columns: 4fr 3fr;
+}
+/* cloud./ */
+
+/* languages */
+.languages .flex{
+  flex-wrap: wrap;
+}
+.languages .card{
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.3s ease-in;
+}
+.languages .card:hover{
+  transform: translateY(-15px);
+}
+.languages .card h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* languages./ */
+
+/* features */
+.features_head img{
+  width: 200px;
+  justify-self: flex-end;
+}
+.features_subhead img{
+  width: 300px;
+  justify-self: flex-end;
+}
+.features_main .card>i{
+  margin-right: 20px;
+}
+.features_main .grid{
+  padding: 30px;
+}
+.features_main .grid>*:first-child{
+  grid-column: 1/span 3;
+}
+.features_main .grid>*:nth-child(2){
+  grid-column: 1/span 2;
+}
+/* features./ */
+
+/* docs */
+.docs_head img{
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.docs_main h3{
+  margin: 20px 0px;
+}
+.docs_main .grid{
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+.docs_main nav li{
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.docs_main nav li a:hover{
+  font-weight: bold;
+}
+
+.alert i{
+  margin-right: 10px;
+}
+
+code,pre{
+  background-color: #333;
+  color: #fff;
+  padding: 10px ;
+}
+/* docs./ */
+
+/* footer */
+.footer .social_icons a{
+ margin: 0 10px;
+}
+/* footer./ */

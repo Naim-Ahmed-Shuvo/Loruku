@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./utilities.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./animation.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav_bar">
+      <div class="container flex">
+        <h1 class="logo">Loruku.</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar./ -->
+
+    <!-- ShowCase -->
+    <section class="showcase">
+      <div class="container grid">
+        <!--  -->
+        <div class="showcase_text">
+          <h1>Easier Deployment</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            minima, porro numquam animi iure odit quam totam repellendus culpa
+            delectus, cumque consectetur error nobis! Vitae inventore sint ea
+            nobis quasi?
+          </p>
+          <a href="features.html" class="btn btn_outlined">Read More</a>
+        </div>
+
+        <!--  -->
+        <div class="showcase_form card">
+          <h1>Request Demo</h1>
+          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form_control">
+              <input type="text" name="name" placeholder="Name..." />
+            </div>
+            <div class="form_control">
+              <input type="text" name="company" placeholder="Company Name..." />
+            </div>
+            <div class="form_control">
+              <input type="email" name="email" placeholder="Email..." />
+            </div>
+            <input type="submit" value="Submit" class="btn btn_primary" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ShowCase./ -->
+
+    <!-- stats -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats_header my_1 text_center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor natus
+          et dolorum unde, voluptas blanditiis.
+        </h3>
+        <div class="grid grid_3 my_4 text_center">
+          <div>
+            <i class="fas fa-server fa-3x"></i>
+            <h3>10,400,450</h3>
+            <p class="text_secondary">Deployments</p>
+          </div>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+            <h3>999 TB</h3>
+            <p class="text_secondary">Published</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h3>2,380,464</h3>
+            <p class="text_secondary">Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- stats ./-->
+
+    <!-- cli -->
+    <section class="cli">
+      <div class="container grid">
+        <img src="./images/cli.png" alt="cli_image" />
+        <div class="card">
+          <h3>Easy to use cross platform CLI</h3>
+        </div>
+        <div class="card">
+          <h3>Deploy in seconds</h3>
+        </div>
+      </div>
+    </section>
+    <!-- cli./ -->
+
+    <!-- cloud -->
+    <section class="cloud bg_primary my_2 py_2">
+      <div class="container grid">
+          <div class="text_center">
+            <h2 class="lg">
+              Extreme Cloud Hosting
+            </h2>
+            <p class="lead my_1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi iste nemo blanditiis.
+            </p>
+            <a href="features.html" class="btn btn_dark">Read More</a>
+          </div>
+          <img src="./images/cloud.png" alt="">
+      </div>
+    </section>
+    <!-- cloud./-->
+
+    <!-- languages -->
+    <section class="languages">
+      <h2 class="md text_center my_2">
+        Supported Languages
+      </h2>
+      <div class="container flex">
+        <div class="card">
+          <h4>NodeJs</h4>
+          <img src="./images/logos/node.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Go</h4>
+          <img src="./images/logos/go.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Clojure</h4>
+          <img src="./images/logos/clojure.png" alt="">
+        </div>
+        <div class="card">
+          <h4>C#</h4>
+          <img src="./images/logos/csharp.png" alt="">
+        </div>
+        <div class="card">
+          <h4>PHP</h4>
+          <img src="./images/logos/php.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Python</h4>
+          <img src="./images/logos/python.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Scala</h4>
+          <img src="./images/logos/scala.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- languages./ -->
+
+    <!-- Footer -->
+    <footer class="footer bg_dark py_5">
+       <div class="container grid grid_3">
+           <div>
+             <h3>Loruku.</h3>
+             <p>Copyright &copy; 2021</p>
+           </div>
+           <nav>
+             <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="features.html">Features</a></li>
+               <li><a href="docs.html">Docs</a></li>
+             </ul>
+           </nav>
+           <div class="social_icons">
+             <a><i class="fab fa-github fa-2x"></i></a>
+             <a><i class="fab fa-facebook fa-2x"></i></a>
+             <a><i class="fab fa-instagram fa-2x"></i></a>
+             <a><i class="fab fa-twitter fa-2x"></i></a>
+           </div>
+       </div>
+    </footer>
+    <!-- Footer./ -->
+  </body>
+</html>
